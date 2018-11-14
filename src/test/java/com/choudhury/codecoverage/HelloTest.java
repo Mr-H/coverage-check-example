@@ -10,9 +10,9 @@ public class HelloTest {
 
         // If you want to understand how jacoco works, then run 'mvn clean install' from the command line so that this test will run
         // and you can inspect the surefire argline to understand how jacoco works...
-        System.out.println("Thread.sleep of 60 seconds added to give chance to launch 'jvisualvm' to " +
-                "inspect the full java argLine for SureFire ");
-       Thread.sleep(60000);
+        //System.out.println("Thread.sleep of 60 seconds added to give chance to launch 'jvisualvm' to " +
+        //        "inspect the full java argLine for SureFire ");
+        //Thread.sleep(60000);
 
         Hello hello=new Hello();
         hello.sayHello("en");
@@ -20,6 +20,6 @@ public class HelloTest {
         // ensure that the code coverage check fails,
         // then uncomment the line below to make it pass.
 
-        //hello.sayHello("fr");
+        hello.sayHello("fr");
     }
 }
